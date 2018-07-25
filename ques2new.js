@@ -6,9 +6,12 @@
  * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
-const object1 = {
-  name: 'abhishek',
-  company: 'ibm',
-  id: 1234567
-};
-console.log(Object.keys(object1));
+
+var myObject={greeting:'hii',color:'red'}
+var getKeys = function(myObject){
+   var keys = [];
+   for(var key in myObject){
+      keys.push(key);
+   }
+   return keys;
+}

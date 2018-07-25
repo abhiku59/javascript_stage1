@@ -11,4 +11,4 @@ const object1 = {
   company: 'ibm',
   id: 1234567
 };
-console.log(Object.keys(object1));
+console.log(Object.values(object1));

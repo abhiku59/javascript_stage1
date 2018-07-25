@@ -6,9 +6,11 @@
  * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
-const object1 = {
-  name: 'abhishek',
-  company: 'ibm',
-  id: 1234567
-};
-console.log(Object.keys(object1));
+var myArray = new Object();
+myArray["name"] = "david rayy";
+myArray["sclass"] = "VI";
+myArray["rollno"] = 21;
+var obj = myArray.length;
+console.log(obj)
+console.log(myArray["name"]);
+

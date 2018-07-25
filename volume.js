@@ -6,9 +6,15 @@
  * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
-const object1 = {
-  name: 'abhishek',
-  company: 'ibm',
-  id: 1234567
-};
-console.log(Object.keys(object1));
+function cylinder(cyl_dia,cyl_height){
+  this.cyl_dia=cyl_dia;
+  this.cyl_height=cyl_height;
+  radius=this.cyl_dia/2;
+  
+  this.volume=function(){
+    return Math.PI * radius * radius * this.cyl_height;
+  };
+  var c = new cylinder(4,4);
+  console.log('area =',c.volume());
+}
+ 

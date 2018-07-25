@@ -6,9 +6,10 @@
  * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
-const object1 = {
-  name: 'abhishek',
-  company: 'ibm',
-  id: 1234567
-};
-console.log(Object.keys(object1));
+var student={
+  firstname: 'abhishek',
+  roll_no: '12'
+}
+console.log(student.roll_no);
+delete student.roll_no;
+console.log(student.roll_no);

@@ -6,9 +6,16 @@
  * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
-const object1 = {
-  name: 'abhishek',
-  company: 'ibm',
-  id: 1234567
-};
-console.log(Object.keys(object1));
+var a = prompt("Enter a word");
+var l = a.length;
+var arr = [];
+function myFunction(x){
+ for(var i = 0;i < l;i++){
+   for(var j = i+1;j <= l;j++){
+     arr.push(x.substring(i, j));  
+     
+   }
+ }
+}
+myFunction(a);
+console.log(arr);
